@@ -84,6 +84,14 @@ public class Level1 {
                         break;
                 }
                 break;
+            case 6:
+                switch (board[pos.getRow()][pos.getCol()]) {
+                    case 1:
+                        board[pos.getRow()][pos.getCol()] = 0;
+                        board[pos.getRow()][pos.getCol() + 1] = 7;
+                        break;
+                }
+                break;
         }
         pos.setCol(pos.getCol() + 1);
     }
